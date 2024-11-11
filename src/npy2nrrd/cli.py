@@ -23,4 +23,4 @@ def cli():
 
 
 def main():
-    pass
+    args = cli()
