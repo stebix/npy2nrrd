@@ -1,0 +1,33 @@
+# build and installation instructions
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "npy2nrrd"
+version = "0.0.1"
+authors = [
+  { name="Jannik Stebani", email="jannik.stebani@uni-wuerzburg.de" }
+]
+description = "Conversion between numpy array files and NRRD files."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta"
+]
+license = {file = "LICENSE.txt"}
+keywords = [
+    "data processing", "volumetric imaging", "array data",
+    "image processing"]
+
+dependencies = [
+  "numpy",
+  "nrrd",
+  "rich"
+]
