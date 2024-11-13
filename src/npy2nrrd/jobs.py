@@ -20,6 +20,7 @@ class DetachedHeaderWriteJob:
     force: bool
 
 
+
 @dataclasses.dataclass
 class NRRDWriteJob:
     data: np.ndarray
